@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranav Koruprolu | CSE Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of Pranav Koruprolu — a 3rd semester Computer Science Engineering student at REVA University, documenting his learning journey, GitHub projects, and technical skills." />
+  <meta name="keywords" content="Pranav Koruprolu, CSE student, REVA University, portfolio, GitHub, LeetCode, web development" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="blob-wrap" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-logo">pranav.dev</div>
+  <ul class="nav-links">
+    <li><a href="#about" id="nav-about">About</a></li>
+    <li><a href="#projects" id="nav-projects">Projects</a></li>
+    <li><a href="#hackathon" id="nav-hackathon">Hackathon</a></li>
+    <li><a href="#skills" id="nav-skills">Skills</a></li>
+    <li><a href="#journey" id="nav-journey">Journey</a></li>
+    <li><a href="#profiles" id="nav-profiles">Profiles</a></li>
+    <li><a href="#contact" id="nav-contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#hackathon" class="mobile-link">Hackathon</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#journey" class="mobile-link">Journey</a>
+  <a href="#profiles" class="mobile-link">Profiles</a>
+  <a href="#education" class="mobile-link">Education</a>
+  <a href="#resume" class="mobile-link">Resume</a>
+  <a href="#achievements" class="mobile-link">Achievements</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container" style="width:100%;">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Currently Learning &amp; Building
+        </div>
+        <h1 class="hero-name">Pranav<br/>Koruprolu</h1>
+        <p class="hero-role">
+          <strong>Computer Science Engineering Student</strong> | Aspiring Software Developer
+        </p>
+        <p class="hero-desc">
+          Building skills in software and web development, problem solving, practical projects, and collaborative hackathon work.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-view-work-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            View My Work
+          </a>
+          <a href="https://github.com/pranavkoruprolu-tech" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-github-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub Profile
+          </a>
+          <a href="#resume" class="btn btn-outline">Resume – Coming Soon</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="label">University</span>
+            <span class="value">REVA University</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="label">Branch</span>
+            <span class="value">Comp. Sci. Engg.</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="label">Semester</span>
+            <span class="value">3rd Semester</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="label">Focus</span>
+            <span class="value">Software Development</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-avatar" aria-hidden="true">&#x1F9D1;&#x200D;&#x1F4BB;</div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>scroll</span>
+    <div class="arrow"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About me">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="section-label">// about me</span>
+        <h2 class="section-title">Building Skills,<br/><span>One Commit at a Time</span></h2>
+        <div class="divider"></div>
+        <p>
+          I'm a 3rd semester Computer Science Engineering student at REVA University with a genuine passion for building things with code. My journey has taken me from writing my first Hello World program to maintaining active GitHub repositories and practicing problems on LeetCode.
+        </p>
+        <p>
+          I'm focused on developing a strong foundation — understanding tools, learning version control, practicing programming fundamentals, and collaborating with others in a developer environment.
+        </p>
+        <div class="interest-tags">
+          <span class="interest-tag">&#x1F4BB; Software Development</span>
+          <span class="interest-tag">&#x1F310; Web Development</span>
+          <span class="interest-tag">&#x1F9E9; Problem Solving</span>
+          <span class="interest-tag">&#x1F527; Programming</span>
+          <span class="interest-tag">&#x1F4E6; Git &amp; GitHub</span>
+          <span class="interest-tag">&#x1F91D; Hackathons</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">&#x1F4C2;</div>
+            <h4>GitHub Active</h4>
+            <p>Practising Git and GitHub through coding and project work</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">&#x1F9E0;</div>
+            <h4>LeetCode Practitioner</h4>
+            <p>Developing problem-solving skills through coding practice</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">&#x1F91D;</div>
+            <h4>Collaborative Dev</h4>
+            <p>Collaborating with a team using Git and GitHub</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">&#x1F50D;</div>
+            <h4>Version Control</h4>
+            <p>Learning version control workflows with Git and GitHub</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section id="projects" aria-label="Featured projects">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// selected projects</span>
+      <h2 class="section-title">Projects &amp; <span>Practical Work</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc">A selection of project work and coding practice from my development journey.</p>
+    </div>
+    <div class="activities-grid">
+      <article class="activity-card reveal reveal-delay-1" id="project-challengeconnect">
+        <div class="activity-num">Featured · SIH 2026</div>
+        <div class="activity-icon" aria-hidden="true">&#x1F310;</div>
+        <h3>ChallengeConnect</h3>
+        <p><strong>Problem:</strong> Societal challenges need a way for citizens, government, students, universities, and industry to connect around solutions.</p>
+        <p><strong>Solution:</strong> A platform where challenges can be posted, discovered, solved, reviewed, and tracked through <strong>Problem → Solution → Review → Implementation</strong>.</p>
+        <p><strong>My role:</strong> Main Frontend Developer. Built frontend pages and HTML structure, worked with frontend JavaScript, created user-facing interactions, connected frontend functionality to the workflow, and collaborated using Git/GitHub.</p>
+        <p class="activity-tools-label">Technologies</p>
+        <div class="activity-tags">
+          <span class="activity-tag">HTML</span><span class="activity-tag">CSS</span>
+          <span class="activity-tag">JavaScript</span><span class="activity-tag">Git</span><span class="activity-tag">GitHub</span>
+        </div>
+        <p><strong>Key contribution:</strong> Main frontend development and workflow-connected interactions.</p>
+        <span class="project-placeholder">GitHub – Link to be added</span>
+        <span class="project-placeholder">Live Demo – Coming Soon</span>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-2" id="project-smartconnect">
+        <div class="activity-num">Recent project</div>
+        <div class="activity-icon" aria-hidden="true">&#x1F517;</div>
+        <h3>SmartConnect</h3>
+        <p>SmartConnect is a project focused on building a practical digital solution. The project is part of my hands-on learning and development journey.</p>
+        <p><strong>Technologies:</strong> Coming Soon</p>
+        <p><strong>Key features:</strong> Coming Soon</p>
+        <span class="project-placeholder">GitHub – Link to be added</span>
+        <span class="project-placeholder">Live Demo – Coming Soon</span>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-3" id="project-drowsiness">
+        <div class="activity-num">IoT project</div>
+        <div class="activity-icon" aria-hidden="true">&#x1F697;</div>
+        <h3>Driver Drowsiness Detection</h3>
+        <p>Explores computer-vision-based driver drowsiness detection using a laptop camera and Python, with Arduino-based hardware alerts.</p>
+        <p class="activity-tools-label">Hardware</p>
+        <div class="activity-tags">
+          <span class="activity-tag">Arduino Nano</span><span class="activity-tag">Red LED</span>
+          <span class="activity-tag">Green LED</span><span class="activity-tag">Buzzer</span><span class="activity-tag">Breadboard</span>
+        </div>
+        <p><strong>Technologies:</strong> Python, Arduino Nano</p>
+        <p><strong>Telegram integration:</strong> Planned / Future Enhancement</p>
+        <span class="project-placeholder">GitHub – Link to be added</span>
+        <span class="project-placeholder">Live Demo – Coming Soon</span>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-4" id="project-leetcode">
+        <div class="activity-num">Coding practice</div>
+        <div class="activity-icon" aria-hidden="true">&#x1F9E9;</div>
+        <h3>LeetCode Practice</h3>
+        <p>A public repository for documenting coding practice and building problem-solving skills.</p>
+        <div class="activity-tags"><span class="activity-tag">LeetCode</span><span class="activity-tag">C</span><span class="activity-tag">Python</span></div>
+        <a href="https://github.com/pranavkoruprolu-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="activity-repo-btn">GitHub – leetcode-solutions</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SIH HACKATHON EXPERIENCE -->
+<section id="hackathon" aria-label="Hackathon experience">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// hackathon experience</span>
+      <h2 class="section-title">Building Together at <span>SIH 2026</span></h2>
+      <div class="divider"></div>
+    </div>
+    <article class="timeline-card reveal">
+      <div class="timeline-date">Smart India Hackathon 2026</div>
+      <h3>ChallengeConnect · Main Frontend Developer</h3>
+      <p>Participated in Smart India Hackathon 2026 with ChallengeConnect, a platform designed to connect citizens, government, students, universities, and industry around societal challenges.</p>
+      <p>The workflow is <strong>Problem → Solution → Review → Implementation</strong>. Challenges can be posted, discovered, solved, reviewed, and tracked.</p>
+      <p>My responsibilities included building frontend pages and HTML structure, working with frontend JavaScript, creating user-facing interactions, connecting frontend functionality with the project workflow, and collaborating with the team using Git/GitHub.</p>
+      <div class="activity-tags"><span class="activity-tag">HTML</span><span class="activity-tag">CSS</span><span class="activity-tag">JavaScript</span><span class="activity-tag">Git</span><span class="activity-tag">GitHub</span></div>
+      <span class="project-placeholder">GitHub – Link to be added</span>
+      <span class="project-placeholder">Live Demo – Coming Soon</span>
+    </article>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" aria-label="Activities and projects">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// activities &amp; projects</span>
+      <h2 class="section-title">What I've <span>Been Working On</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc">
+        A record of the hands-on activities and practical projects I've completed as part of my learning journey.
+      </p>
+    </div>
+    <div class="activities-grid">
+
+      <article class="activity-card reveal reveal-delay-1" id="activity-vscode-setup">
+        <div class="activity-num">Activity 01</div>
+        <div class="activity-icon">&#x26A1;</div>
+        <h3>VS Code Setup &amp; Hello World</h3>
+        <p>Set up a complete development environment using Visual Studio Code and created my first Hello World project. Pushed the repository to GitHub, getting practical experience with essential developer tools right from the start.</p>
+        <p class="activity-tools-label">Tools used:</p>
+        <div class="activity-tags">
+          <span class="activity-tag">VS Code</span>
+          <span class="activity-tag">GitHub</span>
+          <span class="activity-tag">Dev Environment</span>
+        </div>
+        <span id="activity1-repo-placeholder" style="display:inline-flex;align-items:center;gap:.45rem;font-size:.82rem;font-weight:500;color:var(--text-muted);border:1px dashed rgba(255,255,255,.15);border-radius:100px;padding:.3rem .9rem;cursor:default;margin-top:auto;" title="Repository link will be added once the URL is available">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Hello World Repository &mdash; Link to be added
+        </span>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-2" id="activity-git-github">
+        <div class="activity-num">Activity 02</div>
+        <div class="activity-icon">&#x1F333;</div>
+        <h3>Git &amp; GitHub Fundamentals</h3>
+        <p>Learned the core concepts of version control — creating repositories, tracking and committing changes, and pushing projects to GitHub. This gave me a solid understanding of how developers manage and collaborate on code.</p>
+        <p class="activity-tools-label">Tools used:</p>
+        <div class="activity-tags">
+          <span class="activity-tag">Git</span>
+          <span class="activity-tag">GitHub</span>
+          <span class="activity-tag">Version Control</span>
+        </div>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-3" id="activity-gitlens-liveshare">
+        <div class="activity-num">Activity 03</div>
+        <div class="activity-icon">&#x1F52D;</div>
+        <h3>GitLens &amp; VS Code Live Share</h3>
+        <p>Explored GitLens for deeper Git insights directly inside VS Code — viewing repository history and blame annotations. Used VS Code Live Share for real-time collaborative coding, experiencing professional team development workflows.</p>
+        <p class="activity-tools-label">Tools used:</p>
+        <div class="activity-tags">
+          <span class="activity-tag">GitLens</span>
+          <span class="activity-tag">Live Share</span>
+          <span class="activity-tag">VS Code</span>
+          <span class="activity-tag">Collaboration</span>
+        </div>
+      </article>
+
+      <article class="activity-card reveal reveal-delay-4" id="activity-leetcode" style="border-color:rgba(124,92,252,.3);">
+        <div class="activity-num">Activity 04</div>
+        <div class="activity-icon">&#x1F9E9;</div>
+        <h3>LeetCode Solutions Repository</h3>
+        <p>Created and actively maintained a public GitHub repository <strong style="color:var(--text-primary)">leetcode-solutions</strong> to document coding practice. Problems span arrays, strings, basic algorithms, linked lists, and stacks — organised for continuous progress tracking.</p>
+        <p class="activity-tools-label">Topics covered:</p>
+        <div class="activity-tags">
+          <span class="activity-tag">LeetCode</span>
+          <span class="activity-tag">Arrays</span>
+          <span class="activity-tag">Strings</span>
+          <span class="activity-tag">Algorithms</span>
+          <span class="activity-tag">Linked Lists</span>
+          <span class="activity-tag">Stacks</span>
+        </div>
+        <a href="https://github.com/pranavkoruprolu-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="activity-repo-btn" id="activity4-leetcode-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View leetcode-solutions on GitHub
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Technical skills">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// technical skills</span>
+      <h2 class="section-title">My <span>Tech Stack</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc">Technologies and tools I've learned and used through coursework, practice, and hands-on projects.</p>
+    </div>
+    <div class="skills-categories">
+      <div class="skill-category reveal reveal-delay-1" id="skills-languages">
+        <div class="skill-category-icon purple">&#x1F4BB;</div>
+        <h3>Programming Languages</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">C</span>
+          <span class="skill-pill">Python</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2" id="skills-web">
+        <div class="skill-category-icon cyan">&#x1F310;</div>
+        <h3>Web Technologies</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3" id="skills-vcs">
+        <div class="skill-category-icon green">&#x1F527;</div>
+        <h3>Version Control</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-4" id="skills-tools">
+        <div class="skill-category-icon pink">&#x1F6E0;&#xFE0F;</div>
+        <h3>Tools &amp; Platforms</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Visual Studio Code</span>
+          <span class="skill-pill">GitLens</span>
+          <span class="skill-pill">VS Code Live Share</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1" id="skills-database">
+        <div class="skill-category-icon pink" aria-hidden="true">&#x1F5C4;&#xFE0F;</div>
+        <h3>Database</h3>
+        <div class="skill-pills"><span class="skill-pill">SQL</span></div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2" id="skills-coding-practice">
+        <div class="skill-category-icon cyan" aria-hidden="true">&#x1F9E9;</div>
+        <h3>Coding Practice</h3>
+        <div class="skill-pills"><span class="skill-pill">LeetCode</span><span class="skill-pill">HackerRank</span><span class="skill-pill">Codeforces</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" aria-label="Education">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// education</span>
+      <h2 class="section-title">Academic <span>Background</span></h2>
+      <div class="divider"></div>
+    </div>
+    <article class="timeline-card reveal">
+      <div class="timeline-date">Current · 3rd Semester</div>
+      <h3>REVA University</h3>
+      <p>Computer Science Engineering</p>
+    </article>
+  </div>
+</section>
+
+<!-- CODING PROFILES -->
+<section id="profiles" aria-label="Coding and developer profiles">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// coding profiles</span>
+      <h2 class="section-title">Find Me <span>Online</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="activities-grid">
+      <article class="activity-card reveal reveal-delay-1">
+        <h3>GitHub</h3>
+        <p>Projects, repositories, and development work.</p>
+        <a class="activity-repo-btn" href="https://github.com/pranavkoruprolu-tech" target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
+      </article>
+      <article class="activity-card reveal reveal-delay-2">
+        <h3>LeetCode</h3>
+        <p>Coding practice profile.</p>
+        <a class="activity-link" href="https://github.com/pranavkoruprolu-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer">View LeetCode solutions repository</a>
+        <span class="project-placeholder">Link to be added</span>
+      </article>
+      <article class="activity-card reveal reveal-delay-3">
+        <h3>HackerRank</h3>
+        <p>Coding practice profile.</p>
+        <span class="project-placeholder">Link to be added</span>
+      </article>
+      <article class="activity-card reveal reveal-delay-4">
+        <h3>Codeforces</h3>
+        <p>Coding practice profile.</p>
+        <span class="project-placeholder">Link to be added</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" aria-label="Resume">
+  <div class="container">
+    <div class="goal-card reveal">
+      <span class="section-label">// resume</span>
+      <h2 class="section-title">Resume <span>Coming Soon</span></h2>
+      <p>A resume PDF will be added here when available.</p>
+      <span class="project-placeholder">Resume – Coming Soon</span>
+      <button class="btn btn-outline" type="button" disabled>View Resume</button>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS & CERTIFICATIONS -->
+<section id="achievements" aria-label="Achievements and certifications">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// achievements &amp; certifications</span>
+      <h2 class="section-title">Growing <span>Milestones</span></h2>
+      <div class="divider"></div>
+    </div>
+    <article class="timeline-card reveal">
+      <p>Achievements and certifications will be added as I complete them.</p>
+    </article>
+  </div>
+</section>
+
+<!-- LEARNING JOURNEY -->
+<section id="journey" aria-label="Learning journey">
+  <div class="container">
+    <div class="reveal" style="max-width:640px;">
+      <span class="section-label">// learning journey</span>
+      <h2 class="section-title">How I Got <span>Here</span></h2>
+      <div class="divider"></div>
+      <p class="section-desc">Key milestones in my journey as a developing programmer — from setting up my first editor to practising data structures.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Step 1 &middot; Environment Setup</div>
+          <h3>First Development Environment</h3>
+          <p>Installed and configured Visual Studio Code, set up my first coding workspace, and wrote a Hello World program. Created my first GitHub repository to start tracking my work from day one.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Step 2 &middot; Version Control</div>
+          <h3>Mastering Git &amp; GitHub</h3>
+          <p>Learned how to initialise repositories, stage and commit changes, and push projects to GitHub. Understood how developers use version control to manage code history and collaborate effectively.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Step 3 &middot; Developer Tooling</div>
+          <h3>GitLens &amp; Collaborative Coding</h3>
+          <p>Extended VS Code with GitLens to explore repository history and understand code changes in context. Used VS Code Live Share to experience real-time collaborative development with others.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Step 4 &middot; Problem Solving</div>
+          <h3>Structured LeetCode Practice</h3>
+          <p>Created a dedicated public GitHub repository to document LeetCode solutions. Working through problems in arrays, strings, algorithms, linked lists, and stacks — building consistency and problem-solving confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER GOAL -->
+<section id="goal" aria-label="Career and learning goal">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 3rem;">
+      <span class="section-label">// career goal</span>
+      <h2 class="section-title">Where I'm <span>Headed</span></h2>
+      <div class="divider" style="margin:1rem auto 0;"></div>
+    </div>
+    <div class="goal-card reveal">
+      <span class="goal-icon" aria-hidden="true">&#x1F680;</span>
+      <h3>Building Towards a Software Career</h3>
+      <p>My goal is to become a skilled, well-rounded software developer. I want to strengthen my programming fundamentals, sharpen my problem-solving ability, build practical projects that solve real problems, gain hands-on internship experience, and eventually contribute to meaningful, real-world software projects.</p>
+      <div class="goal-pillars">
+        <div class="goal-pillar">&#x1F9E0; Strong Programming Foundation</div>
+        <div class="goal-pillar">&#x1F528; Practical Project Building</div>
+        <div class="goal-pillar">&#x1F9E9; Problem-Solving Mastery</div>
+        <div class="goal-pillar">&#x1F4BC; Internship Experience</div>
+        <div class="goal-pillar">&#x1F30D; Real-World Contributions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">// contact</span>
+      <h2 class="section-title" style="text-align:center;">Let's <span>Connect</span></h2>
+      <div class="divider" style="margin:1rem auto 0;"></div>
+    </div>
+    <p class="contact-desc reveal">
+      The best way to reach me right now is through GitHub. You can browse my repositories, follow my progress, or send me a message there. No email or social accounts are listed here to keep all information accurate.
+    </p>
+    <div class="contact-links reveal">
+      <a href="https://github.com/pranavkoruprolu-tech" target="_blank" rel="noopener noreferrer" class="contact-link contact-link-primary" id="contact-github-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <div class="contact-link-text">
+          <span class="contact-link-title">GitHub Profile</span>
+          <span class="contact-link-sub">github.com/pranavkoruprolu-tech</span>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;opacity:.5;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="https://github.com/pranavkoruprolu-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-leetcode-repo-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><polyline points="16 13 12 17 8 13"/><line x1="12" y1="12" x2="12" y2="17"/></svg>
+        <div class="contact-link-text">
+          <span class="contact-link-title">leetcode-solutions</span>
+          <span class="contact-link-sub">github.com/pranavkoruprolu-tech/leetcode-solutions</span>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;opacity:.5;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">pranav.dev</div>
+      <p class="footer-copy">Crafted with <span>&#x2665;</span> by Pranav Koruprolu &middot; 3rd Sem CSE &middot; REVA University</p>
+      <button class="footer-back-top" id="back-to-top-btn" aria-label="Back to top">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        Back to top
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
